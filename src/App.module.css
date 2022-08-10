@@ -1,0 +1,28 @@
+.app {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightgray;
+}
+.app__cash {
+    width: 200px;
+    border: 1px solid black;
+    font-size: 40px;
+    margin: 20px 0;
+}
+.btn__container {
+    display: flex;
+}
+.btn {
+    border: none;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+.btn:hover {
+    background: lightcyan;
+    transition: all 500ms ease-in-out;
+}
