@@ -1,8 +1,9 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
 import cl from './App.module.css'
+import { fetchCustomers } from "./asyncActions/customers"
 import { getCashAction, addCashAction } from "./store/cashReducer"
-import { addCustomAction, removeCustomAction } from "./store/customerReducer"
+import { addCustomerAction, removeCustomAction } from "./store/customerReducer"
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
       name
     }
     // dispatch({type: "ADD_CUSTOMER", payload: customer})
-    dispatch(addCustomAction(customer))
+    dispatch(addCustomerAction(customer))
   }
 
   const removeCustomer = (customer) => {
@@ -42,6 +43,7 @@ function App() {
           <button className={cl.btn} onClick={() => addCash(Number(prompt()))}>Пополнить счет</button>
           <button className={cl.btn} onClick={() => getCash(Number(prompt()))}>Снять со счета</button>
           <button className={cl.btn} onClick={() => addCustomer(prompt())}>Добавить клиента</button>
+          <button className={cl.btn} onClick={() => dispatch(fetchCustomers())}>Получить клиентов из базы</button>
       </div>
       { customers.length > 0
          ? <div>
