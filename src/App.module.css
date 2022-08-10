@@ -8,12 +8,12 @@
 }
 .app__cash {
     width: 200px;
-    border: 1px solid black;
     font-size: 40px;
     margin: 20px 0;
 }
 .btn__container {
     display: flex;
+    margin-bottom: 20px;
 }
 .btn {
     border: none;
@@ -25,4 +25,14 @@
 .btn:hover {
     background: lightcyan;
     transition: all 500ms ease-in-out;
+}
+.text {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.customer {
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
 }
