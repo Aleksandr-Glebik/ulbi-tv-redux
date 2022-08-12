@@ -2,6 +2,7 @@ import React from "react"
 import cl from './App.module.css'
 import { useDispatch, useSelector } from "react-redux"
 import {incrementCreator, decrementCreator, asyncIncrementCreator, asyncDecrementCreator} from './store/countReducer'
+import { fetchUsers } from "./store/userReducer"
 
 function App() {
   const count = useSelector(state => state.countReducer.count)
@@ -16,7 +17,7 @@ function App() {
           <button className={cl.btn} onClick={() => dispatch(asyncIncrementCreator())}>асинхр++</button>
           <button className={cl.btn} onClick={() => dispatch(decrementCreator())}>--</button>
           <button className={cl.btn} onClick={() => dispatch(asyncDecrementCreator())}>асинхр--</button>
-          <button className={cl.btn}>Получить юзеров</button>
+          <button className={cl.btn} onClick={() => dispatch(fetchUsers())}>Получить юзеров</button>
       </div>
       <div>
         {users && users.map(user =>
