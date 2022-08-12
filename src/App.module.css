@@ -6,7 +6,7 @@
     align-items: center;
     background: lightgray;
 }
-.app__cash {
+.count {
     width: 200px;
     font-size: 40px;
     margin: 20px 0;
