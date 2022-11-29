@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ulbi-tv-redux/static/css/main.3784a11a.css",
+    "main.js": "/ulbi-tv-redux/static/js/main.4d60f6ed.js",
+    "index.html": "/ulbi-tv-redux/index.html",
+    "main.3784a11a.css.map": "/ulbi-tv-redux/static/css/main.3784a11a.css.map",
+    "main.4d60f6ed.js.map": "/ulbi-tv-redux/static/js/main.4d60f6ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3784a11a.css",
+    "static/js/main.4d60f6ed.js"
+  ]
+}
